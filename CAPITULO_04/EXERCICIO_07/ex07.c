@@ -1,6 +1,8 @@
+// Calcula o preço de um produto com o imposto do estado escolhido.
+
 #include <stdio.h>
 
-int main(){
+int main() {
     int numero_do_estado;
     double valor, novo_valor;
 
@@ -11,24 +13,23 @@ int main(){
     printf("Insira o valor do estado selecionado: ");
     scanf("%d", &numero_do_estado);
 
-    if (numero_do_estado == 1){
-        novo_valor = valor*(1.07);
+    if (numero_do_estado == 1) {
+        novo_valor = valor * (1.07);
         printf("\nO imposto em MG é 12%% \n");
-    }else if (numero_do_estado == 2){
-        novo_valor = valor*(1.12);
+    } else if (numero_do_estado == 2) {
+        novo_valor = valor * (1.12);
         printf("\nO imposto em SP é 12%% \n");
-    }else if (numero_do_estado == 3){
-        novo_valor = valor*(1.15);
+    } else if (numero_do_estado == 3) {
+        novo_valor = valor * (1.15);
         printf("\nO imposto em RJ é 15%% \n");
-    }else if (numero_do_estado == 4){
-        novo_valor = valor*(1.08);
+    } else if (numero_do_estado == 4) {
+        novo_valor = valor * (1.08);
         printf("\nO imposto em MS é 8%% \n");
-    }else{
+    } else {
         printf("\nErro.\n");
     }
 
     printf("O valor do produto com imposto é %.2lf\n", novo_valor);
-    
-    
+
     return 0;
 }

@@ -1,12 +1,15 @@
+// Divide o prêmio da loteria entre três ganhadores.
+
 #include <stdio.h>
 
-int main(){
+int main() {
     float total, primeiro_ganhador, segundo_ganhador, terceiro_ganhador;
-    
+
     total = 780000.00;
     primeiro_ganhador = total * 0.42;
     segundo_ganhador = total * 0.36;
-    terceiro_ganhador = total * (1-(0.36+0.42));
+    // O terceiro fica com o que sobra (22%).
+    terceiro_ganhador = total * (1 - (0.36 + 0.42));
 
     printf("TABELA DE PRÊMIOS\n\n");
     printf("PRIMEIRO GANHADOR: R$ %.2f\n", primeiro_ganhador);

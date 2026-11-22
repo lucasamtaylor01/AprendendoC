@@ -1,20 +1,23 @@
+// Calcula a soma dos 50 primeiros números pares.
+
 #include <stdio.h>
 
 int main() {
-  int soma, contador, i;
+    int soma, contador, i;
 
-  soma = 0;
-  contador = 0;
-  i = 0;
+    soma = 0;
+    contador = 0;
+    i = 0;
 
-  while (contador < 50) {
-    if (i % 2 == 0) {
-      soma += i;
-      contador++;
+    // contador guarda quantos pares já foram somados.
+    while (contador < 50) {
+        if (i % 2 == 0) {
+            soma += i;
+            contador++;
+        }
+
+        i++;
     }
-
-    i++;
-  }
-  printf("Soma: %d\n", soma);
-  return 0;
+    printf("Soma: %d\n", soma);
+    return 0;
 }

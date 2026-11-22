@@ -1,16 +1,19 @@
+// Mostra os cinco primeiros múltiplos de 3.
+
 #include <stdio.h>
 
 int main() {
-  int contador, i;
+    int contador, i;
 
-  contador = 0;
-  i = 1;
-  while (contador < 5) {
-    if (i % 3 == 0) {
-      printf("%d\n", i);
-      contador++;
+    contador = 0;
+    i = 1;
+    // contador guarda quantos múltiplos já foram encontrados.
+    while (contador < 5) {
+        if (i % 3 == 0) {
+            printf("%d\n", i);
+            contador++;
+        }
+        i++;
     }
-    i++;
-  }
-  return 0;
+    return 0;
 }
