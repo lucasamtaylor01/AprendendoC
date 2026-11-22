@@ -3,8 +3,6 @@
 #include <math.h>
 #include <stdio.h>
 
-double PI = 3.14;
-
 int main() {
     double raio, raio2, altura, volume;
 
@@ -15,9 +13,8 @@ int main() {
     printf("Insira o valor do raio: ");
     scanf("%lf", &raio);
 
-    // Volume = PI * r² * altura.
     raio2 = pow(raio, 2.0);
-    volume = PI * raio2 * altura;
+    volume = M_PI * raio2 * altura;
 
     printf("O volume do cilindro é %.2lf\n", volume);
 

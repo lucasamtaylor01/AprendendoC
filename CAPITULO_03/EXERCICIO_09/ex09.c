@@ -1,8 +1,7 @@
 // Converte um ângulo de graus para radianos.
 
 #include <stdio.h>
-
-#define PI 3.14
+#include <math.h>
 
 int main() {
     float graus, radianos;
@@ -10,7 +9,7 @@ int main() {
     scanf("%f", &graus);
 
     // 180 graus equivalem a PI radianos.
-    radianos = graus * PI / 180;
+    radianos = graus * M_PI / 180;
 
     printf("Temos que o valor de %.2f está associado a %.2f radianos.\n", graus, radianos);
     return 0;
